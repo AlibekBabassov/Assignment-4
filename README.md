@@ -70,4 +70,76 @@ Creates small (10), medium (30), and large (100) vertex graphs, runs traversals,
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
+C. Algorithm Descriptions:
+
+Breadth-First Search (BFS)
+
+1.Mark start vertex as visited and enqueue it. 
+
+2.While the queue is not empty:
+
+-Dequeue the front vertex and process it.
+
+-For each unvisited neighbor, mark as visited and enqueue.
+
+Use cases: Shortest path in unweighted graphs, level-order traversal, web crawlers.
+
+Time Complexity: O(V + E) — each vertex and edge is visited once.
+
+
+Depth-First Search (DFS)
+
+1.Mark current vertex as visited and process it.
+
+2.For each unvisited neighbor, recursively apply DFS.
+
+3.Backtrack when no unvisited neighbors remain.
+
+Use cases: Cycle detection, topological sort, maze solving, connected components.
+
+Time Complexity: O(V + E) — each vertex and edge is visited once.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+D. Experimental Results:
+
+
+
+Graph Size   Algorithm   Time(nanoseconds)
+
+10 vertices     BFS        ~15,000 – 30,000
+
+10 vertices     DFS        ~10,000 – 25,000
+
+30 vertices     BFS        ~20,000 – 50,000
+
+30 vertices     DFS        ~15,000 – 40,000
+
+100 vertices    BFS        ~40,000 – 100,000
+
+100 vertices    DFS        ~30,000 – 80,000
+
+Observations:
+
+-Both BFS and DFS scale similarly with graph size, consistent with O(V + E) complexity.
+
+-DFS tends to be slightly faster in practice on connected chains due to less queue overhead.
+
+-BFS uses more memory (queue) while DFS uses call stack memory.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+F. Reflection Section:
+
+Implementing this project deepened my understanding of how graphs model real-world relationships. The adjacency list representation is elegantly simple — a map where each key is a vertex and each value is its neighbor list — yet it supports both traversal algorithms efficiently.
+
+The most interesting insight was seeing how BFS and DFS produce completely different traversal orders on the same graph. BFS "spreads out" level by level, while DFS "dives in" along one path. Both have the same O(V + E) time complexity, but their memory usage and practical behavior differ significantly. BFS keeps a potentially large queue, while DFS uses the call stack. A key challenge was implementing the silent versions for timing and ensuring the graph remained connected for meaningful traversal tests.
+
+
+
+
+
+
+
+
 
