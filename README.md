@@ -105,19 +105,19 @@ D. Experimental Results:
 
 
 
-Graph Size   Algorithm   Time(nanoseconds)
+Graph Size      Algorithm      Time(nanoseconds)
 
-10 vertices     BFS        ~15,000 – 30,000
+10 vertices       BFS          ~15,000 – 30,000
 
-10 vertices     DFS        ~10,000 – 25,000
+10 vertices       DFS          ~10,000 – 25,000
 
-30 vertices     BFS        ~20,000 – 50,000
+30 vertices       BFS          ~20,000 – 50,000
 
-30 vertices     DFS        ~15,000 – 40,000
+30 vertices       DFS          ~15,000 – 40,000
 
-100 vertices    BFS        ~40,000 – 100,000
+100 vertices      BFS          ~40,000 – 100,000
 
-100 vertices    DFS        ~30,000 – 80,000
+100 vertices      DFS          ~30,000 – 80,000
 
 Observations:
 
