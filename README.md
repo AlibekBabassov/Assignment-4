@@ -29,11 +29,13 @@ Field: int id — unique identifier.
 Methods: Constructor, getId(), toString().
 
 
+
 Edge.java - Represents a directed connection between two vertices.
 
 Fields: Vertex source, Vertex destination.
 
 Methods: Constructor, getSource(), getDestination(), toString().
+
 
 
 Graph.java - Represents the graph structure using an adjacency list (LinkedHashMap<Integer, List<Integer>>).
@@ -49,6 +51,7 @@ bfs(int start) — performs BFS traversal and prints the order.
 dfs(int start) — performs DFS traversal and prints the order.
 
 
+
 Experiment.java - Handles execution and performance analysis.
 
 runTraversals(Graph g) — runs BFS and DFS on the given graph and records times.
@@ -58,6 +61,7 @@ runMultipleTests() — builds and tests graphs of size 10, 30, and 100.
 printResults() — prints a formatted performance comparison table.
 
 buildTestGraph(int size) — static helper to build a connected test graph.
+
 
 
 Main.java - Entry point. 
