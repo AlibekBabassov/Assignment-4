@@ -4,6 +4,7 @@ Name: Babassov Alibek
 
 Group: IT-2503
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 A. Project Overview:
 
@@ -17,6 +18,7 @@ BFS (Breadth-First Search) -  Explores all neighbors of the current vertex befor
 
 DFS (Depth-First Search) - Explores as deep as possible along each branch before backtracking. Uses recursion (implicit call stack). Best for cycle detection and topological sorting.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 B. Class Descriptions:
 
@@ -61,3 +63,7 @@ buildTestGraph(int size) — static helper to build a connected test graph.
 Main.java - Entry point. 
 
 Creates small (10), medium (30), and large (100) vertex graphs, runs traversals, displays output, and prints the performance table.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
